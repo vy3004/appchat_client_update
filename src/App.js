@@ -15,6 +15,7 @@ import LogoutModal from "./components/Modals/LogoutModal";
 import RenameGroupModal from "./components/Modals/RenameGroupModal";
 import DeleteGroupModal from "./components/Modals/DeleteGroupModal";
 import AddFriendModal from "./components/Modals/AddFriendModal";
+import InfoUserOtherModal from "./components/Modals/InfoUserOtherModal";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route element={<ChatRoom />} path="/" />
         </Routes>
         <InfoUserModal />
+        <InfoUserOtherModal />
         <UpdateInfoUserModal />
         <AddUserModal />
         <AddGroupModal />

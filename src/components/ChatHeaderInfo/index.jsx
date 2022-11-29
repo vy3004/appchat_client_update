@@ -5,7 +5,8 @@ import "./style.css";
 import { AppContext } from "../../context/AppProvider";
 
 export default function ChatHeaderInfo({ currentChat }) {
-  const { roomChat, contacts, user } = useContext(AppContext);
+  const { roomChat, contacts, user, setIsInfoUserOtherModalOpen } =
+    useContext(AppContext);
 
   const [name, setname] = useState("");
 
@@ -34,7 +35,7 @@ export default function ChatHeaderInfo({ currentChat }) {
   };
 
   const handleOpenInfo = () => {
-    console.log("Info User");
+    setIsInfoUserOtherModalOpen(true);
   };
 
   return (

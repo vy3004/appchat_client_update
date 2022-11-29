@@ -4,6 +4,8 @@ export const AppContext = React.createContext();
 
 export default function AppProvider({ children }) {
   const [isInfoUserModalOpen, setIsInfoUserModalOpen] = useState(false);
+  const [isInfoUserOtherModalOpen, setIsInfoUserOtherModalOpen] =
+    useState(false);
   const [isInfoGroupModalOpen, setIsInfoGroupModalOpen] = useState(false);
   const [isUpdateInfoUserModalOpen, setIsUpdateInfoUserModalOpen] =
     useState(false);
@@ -36,6 +38,7 @@ export default function AppProvider({ children }) {
 
   const clearState = () => {
     setIsInfoUserModalOpen(false);
+    setIsInfoUserOtherModalOpen(false);
     setIsInfoGroupModalOpen(false);
     setIsUpdateInfoUserModalOpen(false);
     setIsAddUserModalOpen(false);
@@ -54,6 +57,8 @@ export default function AppProvider({ children }) {
       value={{
         isInfoUserModalOpen,
         setIsInfoUserModalOpen,
+        isInfoUserOtherModalOpen,
+        setIsInfoUserOtherModalOpen,
         isInfoGroupModalOpen,
         setIsInfoGroupModalOpen,
         isUpdateInfoUserModalOpen,

@@ -84,7 +84,7 @@
   height: 50px;
   width: 86%;
 }
-.dsBan{
+.dsBan {
   display: flex;
   justify-items: flex-start;
   align-items: center;
@@ -93,15 +93,14 @@
   /* height: 70px; */
   /* background-color: red; */
 }
-.dsBan :hover{
-
+.dsBan :hover {
   background-color: #eeeff2;
 }
-.avt{
+.avt {
   width: 70px;
   height: 70px;
 }
-.click{
+.click {
   display: flex;
   width: 350px;
   height: 60px;
@@ -109,6 +108,56 @@
   /* justify-content: center; */
   /* background-color: aqua; */
 }
-.thep{
+.thep {
   padding-top: 12px;
+}
+.user-other {
+  border-bottom: 0.4rem solid #d6dbe1;
+}
+.user-orther-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.user-orther-btn Button {
+  width: 50%;
+  height: 100%;
+  margin: 0.5rem;
+  border-radius: 6px;
+  background-color: #d6dbe1;
+}
+.user-orther-btn Button:hover {
+  background-color: #b7bcc7;
+}
+.user-orther-btn Button:focus {
+  background-color: #b7bcc7;
+}
+.user-orther-btn Button span {
+  font-size: 16px;
+}
+.user-other-body {
+  height: 100%;
+  padding: 0.5rem;
+}
+.user-other-footer {
+  display: flex;
+  flex-direction: column;
+}
+.user-other-footer Button {
+  width: 100%;
+  height: 3rem;
+  border-bottom: 1px solid #d6dbe1;
+}
+.user-other-footer Button:hover {
+  background-color: #f3f5f6;
+}
+.user-other-footer Button:focus {
+  background-color: #d6dbe1;
+}
+.user-other-footer Button span {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
 }
